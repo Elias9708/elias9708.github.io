@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Excel y Mostrar Datos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-4">Subir Excel y Mostrar Datos</h2>
+        
+        <div class="form-group">
+            <label for="fileInput">Seleccionar archivo Excel:</label>
+            <input type="file" class="form-control-file" id="fileInput">
+        </div>
+        <button onclick="cargarArchivo()" class="btn btn-primary">Cargar Excel</button>
+
+        <div class="mt-4">
+            <table id="tablaDatos" class="table table-striped table-bordered" style="width:100%">
+                <!-- Aquí se mostrarán los datos -->
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+    <script src="excel.js"></script>
+</body>
+</html>
